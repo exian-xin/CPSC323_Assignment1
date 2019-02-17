@@ -1,0 +1,33 @@
+! Find largest value between two numbers!
+int num1, num2, large$
+if(num1 > num2)
+{
+	large = num1$;
+}
+else
+{
+	large = num2$;
+}
+
+
+
+int num1, num2, large$
+
+type0, state0
+
+int
+
+for i to 20 do
+	test 'num1' vs keywords[i]
+	if keywords[i] == "int"
+		return keyword
+	else
+		return identifier
+
+temp == 1num
+
+ch == ','
+
+
+	
+ 
