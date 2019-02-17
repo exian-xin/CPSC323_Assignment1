@@ -63,6 +63,8 @@ int main()
 		while (i < size)
 		{
 			ch = input[i];
+			if(comment == 0)
+			{
 			currentState = testChar(ch, currentState);
 
 			switch (currentState)
@@ -75,13 +77,36 @@ int main()
 				break;
 			case 2:
 				type = getType(temp);
+				if(type == 0)
+				{
+				displayType(temp);
 				chType = getCharType(ch);
-				displayChType(ch);
-				break;
-
+				if(chType == 0)
+				{
+					displayChType(ch);
 				}
-
-
+				else if(chType == 1)
+				{
+					//Comments
+					if(comment == 0)
+						comment = 1;
+					if(comment == 1)
+						comment =0;
+				}
+				break;
+			}
+			else if(comment == 1)
+			{
+				chType = getCharType(ch);
+				if(chType == 1)
+				{
+					//Comments
+					if(comment == 0)
+						comment = 1;
+					if(comment == 1)
+						comment = 0;
+				}
+			}
 			i++;
 		}
 		
