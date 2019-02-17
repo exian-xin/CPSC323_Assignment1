@@ -79,24 +79,33 @@ int main()
 				type = getType(temp);
 				if(type == 0)
 				{
-				displayType(temp);
-				chType = getCharType(ch);
-				if(chType == 0)
+					displayType(temp);
+					chType = getCharType(ch);
+					if(chType == 0)
+					{
+						displayChType(ch);
+					}
+					else if(chType == 1)
+					{
+						//Comments
+						if(comment == 0)
+							comment = 1;
+						if(comment == 1)
+							comment = 0;
+					}
+				else if(type == 1 )
 				{
-					displayChType(ch);
+					chType = getCharType(ch);
+					if(chType == 2 )
+					{
+					temp += ch;	
+					}
 				}
-				else if(chType == 1)
-				{
-					//Comments
-					if(comment == 0)
-						comment = 1;
-					if(comment == 1)
-						comment =0;
-				}
+					
 				break;
-			}
-			else if(comment == 1)
-			{
+				}
+				else if(comment == 1)
+				{
 				chType = getCharType(ch);
 				if(chType == 1)
 				{
@@ -107,7 +116,7 @@ int main()
 						comment = 0;
 				}
 			}
-			i++;
+		i++;
 		}
 		
 				
