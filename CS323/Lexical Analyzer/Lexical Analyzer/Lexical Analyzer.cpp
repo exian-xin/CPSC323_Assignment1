@@ -30,6 +30,8 @@ char SEPERATORS[8] = {'(', ')', '{', '}', ',', ';', '[', ']'};
 int testChar(char ch, int state, int type);
 int getType(string temp);
 void displayType(int type, string temp);
+int getCharType(char ch);
+void displayChType(char ch);
 
 
 int main()
@@ -73,8 +75,8 @@ int main()
 				break;
 			case 2:
 				type = getType(temp);
-				displayType(type, temp);
-				chType = 
+				chType = getCharType(ch);
+				displayChType(ch);
 				break;
 
 				}
