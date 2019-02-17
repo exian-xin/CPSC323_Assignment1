@@ -43,15 +43,12 @@ int testChar(char ch, int state)
 	return currentState;
 
 }
-int testOperator(char ch)
-{
-
-};
+int testOperator(char ch);
 
 
 int main()
 {
-	string input  = "int $num = 3;";
+	string input  = "int num1, num2, large$ if (num1 > num2){ large = num1$;} else {large = num2$;}";
 	string temp;
 	bool comment = 0;
 	char ch = input[0];
@@ -78,28 +75,31 @@ int main()
 			{
 				temp += ch;
 			}
-			else if ((currentState == 2 || currentState == 3) && temp != "")
+			else if ((currentState == 2) && temp != "")
 			{
 
-				cout << "String = " << temp << endl;
-				for (int j = 0; j < 8; j++)
-				{
-					if (ch == Ops_Seps_list[i])
-					{
-
-					}
-				}
-				cout << "Sep/op = " << ch << endl;
-
+				cout << "String\t\t=\t" << temp << endl;
+				cout << "Seperators\t=\t" << ch << endl;
 				temp = "";
 
 			}
-			else if ((currentState == 2 || currentState == 3) && temp == "")
+			else if ((currentState == 3) && temp != "")
 			{
 
+				cout << "String\t\t=\t" << temp << endl;
+				cout << "Operators\t=\t" << ch << endl;
+				temp = "";
 
+			}
+			else if ((currentState == 2 ) && temp == "")
+			{
+				cout << "Seperators\t=\t" << ch << endl;
+				temp = "";
+			}
+			else if ((currentState == 3) && temp == "")
+			{
 
-				cout << "Sep/op = " << ch << endl;
+				cout << "Operators\t=\t" << ch << endl;
 				temp = "";
 			}
 		
@@ -107,32 +107,32 @@ int main()
 	}
 	cout << endl << endl;
 
-	for (int i = 0; i < lengthofString; i++)
-	{
-		ch = input[i];
+	//for (int i = 0; i < lengthofString; i++)
+	//{
+	//	ch = input[i];
 
 
 
-		currentState = testChar(ch, currentState);
-		if (currentState == 0 || currentState == 1)
-		{
-			temp += ch;
-		}
-		else if (currentState == 2 && temp != "")
-		{
-			cout << "String = " << temp << endl;
-			cout << "Sep/op = " << ch << endl;
-			temp = "";
+	//	currentState = testChar(ch, currentState);
+	//	if (currentState == 0 || currentState == 1)
+	//	{
+	//		temp += ch;
+	//	}
+	//	else if (currentState == 2 && temp != "")
+	//	{
+	//		cout << "String = " << temp << endl;
+	//		cout << "Sep/op = " << ch << endl;
+	//		temp = "";
 
-		}
-		else if (currentState == 2 && temp == "")
-		{
-			cout << "Sep/op = " << ch << endl;
-			temp = "";
-		}
+	//	}
+	//	else if (currentState == 2 && temp == "")
+	//	{
+	//		cout << "Sep/op = " << ch << endl;
+	//		temp = "";
+	//	}
 
 
-	}
+	//}
 
 	cout << endl;
 	system("pause");
