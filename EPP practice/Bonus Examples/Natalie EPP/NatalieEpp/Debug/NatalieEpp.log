@@ -1,0 +1,67 @@
+﻿  Node.cpp
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(4): error C2653: 'Node': is not a class or namespace name
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(7): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(9): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(9): error C2061: syntax error: identifier 'Node'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(10): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(10): error C2227: left of '->data' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(10): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(12): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(14): error C2065: 'Node': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(14): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(15): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(15): error C2061: syntax error: identifier 'Node'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(16): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(16): error C2227: left of '->nextptr' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(16): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(16): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(17): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(17): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(18): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(18): error C2227: left of '->data' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(18): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(21): error C2653: 'Node': is not a class or namespace name
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(24): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(28): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(30): error C2065: 'Node': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(30): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(30): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(31): error C2065: 'Node': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(31): error C2065: 'previousptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(32): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(32): error C2227: left of '->nextptr' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(32): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(34): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(34): error C2227: left of '->data' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(34): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(36): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(36): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(38): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(38): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(38): error C2227: left of '->nextptr' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(38): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(39): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(39): error C2541: 'delete': cannot delete objects that are not pointers
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(40): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(40): error C2065: 'head': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(46): error C2065: 'previousptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(46): error C2227: left of '->nextptr' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(46): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(46): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(47): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(47): error C2541: 'delete': cannot delete objects that are not pointers
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(48): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(48): error C2065: 'previousptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(53): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(53): error C2227: left of '->data' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(53): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(55): error C2065: 'previousptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(55): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(56): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(56): error C2227: left of '->nextptr' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(56): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(58): error C2065: 'currentptr': undeclared identifier
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(58): error C2227: left of '->data' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(58): note: type is 'unknown-type'
+c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(58): error C2227: left of '->nextptr' must point to class/struct/union/generic type
+  c:\users\sami halwani\source\repos\natalieepp\natalieepp\node.cpp(58): note: type is 'unknown-type'
