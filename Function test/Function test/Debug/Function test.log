@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\sami halwani\desktop\function test\function test\source.cpp(182): warning C4018: '<': signed/unsigned mismatch
+c:\users\sami halwani\desktop\function test\function test\source.cpp(154): warning C4715: 'testChar': not all control paths return a value
+  Function test.vcxproj -> C:\Users\Sami Halwani\Desktop\Function test\Debug\Function test.exe
