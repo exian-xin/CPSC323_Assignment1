@@ -1,0 +1,4 @@
+﻿  Source.cpp
+e:\projects\cpsc323_assignment1\lexical analyzer-assignment1\lexical analyzer-assignment1\source.cpp(240): warning C4018: '<': signed/unsigned mismatch
+e:\projects\cpsc323_assignment1\lexical analyzer-assignment1\lexical analyzer-assignment1\source.cpp(205): warning C4715: 'testChar': not all control paths return a value
+  Lexical Analyzer-Assignment1.vcxproj -> E:\Projects\CPSC323_Assignment1\Lexical Analyzer-Assignment1\Debug\Lexical Analyzer-Assignment1.exe
