@@ -21,6 +21,10 @@ The Tokens Type and Lexemes must be displayed in a table.
 #include <fstream>
 #include <string>
 #include <cctype>
+#include <vector>
+
+
+
 
 
 using namespace std;
@@ -52,20 +56,27 @@ int FSM[6][7] = {
 };
 
 
+
 //Function Signatures -- Reference Discription Below main()
 int testChar(char ch, int state);
 void displayTemp(string temp);
 void displayChar(char ch);
 
 //------------------------main() Begin------------------
+
+	string oFile = "output.txt";
+	vector<pair<string, string>> output;
 int main()
 {
+
 	string filename;
+
 	string input = ""; //"! Find largest value between two numbers!int num1, num2, large$ if (num1 > num2){ large = num1$;} else {large = num2$;}"; //Test String
 	string temp;
 	char ch;
 	int currentState = 0;
 	int lengthofString = 0;
+
 
 	//Input Variable for to pull information from file
 	cout << "What is the file name?: ";
@@ -74,12 +85,20 @@ int main()
 
 	//Open File
 	if (!inFile.is_open()) {
-		cout << "Cannot open file" << endl;
+		cout << "Cannot open input file" << endl;
+		return 1;
+	}	
+	ofstream outFile(oFile);
+	if (!outFile.is_open())
+	{
+		cout << "Cannot open uutput file" << endl;
 		return 1;
 	}
+
 	cout << endl << endl;
 
 	cout << "Token\t\t\tLexeme" << endl << "------------------------------------" << endl;
+	outFile << "Token\t\t\tLexeme" << endl << "------------------------------------" << endl;
 
 	//Loop until there is no more available lines to read from the file.
 	while (getline(inFile, input))
@@ -132,8 +151,15 @@ int main()
 	}
 	inFile.close();	//Finished Reading File -> Close File
 
+	cout << endl;
+	for (int i = 0; i < output.size(); i++)
+	{
+		cout << output[i].first << "\t" << output[i].second << endl;
+		outFile << output[i].first << "\t" << output[i].second << endl;
+	}
 
 	cout << endl << endl;
+	outFile.close();
 
 	system("pause");
 	return 0;
@@ -215,6 +241,7 @@ if all others are not found.
 */
 void displayTemp(string temp)
 {
+	
 	//Display Temp as long as Temp is not Empty
 	if (temp != "")
 	{
@@ -224,7 +251,8 @@ void displayTemp(string temp)
 
 			if (KEYWORDS[i] == temp)
 			{
-				cout << "Keyword:\t=\t" << temp << endl;
+				//cout << "Keyword:\t=\t" << temp << endl;
+				output.push_back(pair<string, string>("Keyword:\t", temp));
 				return;
 			}
 		}
@@ -232,7 +260,8 @@ void displayTemp(string temp)
 		//---------------Test for Identifier
 		if (isalpha(temp[0]) && is_keyword == 1)
 		{
-			cout << "Identifier:\t=\t" << temp << endl;
+			//cout << "Identifier:\t=\t" << temp << endl;
+			output.push_back(pair<string, string>("Identifier:\t", temp));
 			return;
 		}
 		//---------------Test for Int vs Float
@@ -247,16 +276,19 @@ void displayTemp(string temp)
 		}
 		if (test_float == 0)		// Int
 		{
-			cout << "Integer:\t=\t" << temp << endl;
+			//cout << "Integer:\t=\t" << temp << endl;
+			output.push_back(pair<string, string>("Integer:\t", temp));
 			return;
 		}
 		else if (test_float == 1)	// Float
 		{
-			cout << "Float:\t=\t" << temp << endl;
+			//cout << "Float:\t=\t" << temp << endl;
+			output.push_back(pair<string, string>("Float:\t", temp));
 			return;
 		}
 		//---------------Defualt to Invalid if all Other cases Fail
-		cout << "Invalid\t=\t" << temp << endl;
+		//cout << "Invalid\t=\t" << temp << endl;
+		output.push_back(pair<string, string>("Invalid:\t", temp));
 		return;
 	}
 }
@@ -273,19 +305,21 @@ void displayChar(char ch)
 {
 	//---------------Display Separator or Operator
 
-
+	string temp = string(1, ch);
 		for (int i = 0; i < 8; i++)
 		{
 			if (ch == Ops_Seps_list[i])
 			{
-				cout << "Operator\t=\t" << ch << endl;
+				//cout << "Operator\t=\t" << ch << endl;
+				output.push_back(pair<string, string>("Operator:\t", temp));
 			}
 		}
 		for (int i = 8; i < 22; i++)
 		{
 			if (ch == Ops_Seps_list[i] && ch != '!' && !isspace(ch))
 			{
-				cout << "Separator\t=\t" << ch << endl;
+				//cout << "Separator\t=\t" << ch << endl;
+				output.push_back(pair<string, string>("Separator:\t", temp));
 			}
 		}
 	
